@@ -168,7 +168,7 @@ public class ControlRegalo {
             respuesta = "No se tiene productos para esa edad o precio";
         }
         for (Regalo regalo:regalos) {
-            respuesta += regalo.toString()+"\n";
+            respuesta += regalo.getNombre()+" - "+"Precio base: $"+regalo.getPrecioBase()+" - "+"Precio de envio: $"+regalo.getProveedor().getPrecioEnvio()+" - "+"Precio total: $"+regalo.getPrecioTotal()+"\n";
         }
         return respuesta;
 
